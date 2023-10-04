@@ -1,0 +1,85 @@
+.register{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(193,190,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        max-width: 50%;
+        min-height: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        .left{
+            flex: 1;
+            background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,.5)), url("https://images.pexels.com/photos/17697740/pexels-photo-17697740/free-photo-of-sea-city-landscape-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            opacity: .7;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 30px;
+                h1{
+                  font-size: 100px;
+                  line-height: 100px;
+                }
+                p{
+
+                }
+                span{
+                  font-size: 14px;
+                }
+                button{
+                  width: 50%;
+                  border: none;
+                  color: purple;
+                  padding: 10px 0;
+                  font-weight: 600;
+                  &:hover{
+                    cursor: pointer;
+                  }
+                }
+        }
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+                h1{
+                    color: #555;
+                }
+                form{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 30px;
+                  margin-top: 50px;
+                    input{
+                      border: none;
+                      border-bottom: 1px solid rgba(33, 33, 33, 0.5);
+                      padding: 20px 10px;
+                    }
+                    button{
+                      max-width: 50%;
+                      background-color: rgba(39,11,96,0.5);
+                      color: white;
+                      border: none;
+                      padding: 10px 0;
+                      cursor: pointer;
+                      &::placeholder{
+                        margin-bottom: 5px;
+                      }
+                      &:focus{
+                        outline-width: 0;
+                      }
+                    }
+                }
+        }
+    }
+}

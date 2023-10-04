@@ -1,0 +1,94 @@
+
+@import "../../style.scss";
+
+
+.rightBar{
+    @include themify($themes){
+    flex:3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .container{
+        padding: 20px;
+        .item{
+            background-color: white;
+            box-shadow: 4px 3px 110px -23px rgba(0,0,0,0.18);
+            -webkit-box-shadow: 4px 3px 110px -23px rgba(0,0,0,0.18);
+            -moz-box-shadow: 4px 3px 110px -23px rgba(0,0,0,0.18);
+            padding: 10px;
+            margin-bottom: 20px;
+
+            span{
+               color: gray;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px;
+                
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    position: relative;
+
+                    
+                    img{
+                       width: 30px;
+                       height: 30px;
+                       border-radius: 50%;
+                       object-fit: cover;
+                      
+                       
+                      
+                    }
+                    .online{
+                        background-color: limegreen;
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 25px;
+                    }
+
+
+                    p{
+                       color: gray;
+                    }
+
+
+
+                    span{
+                       font-weight: 500;
+                    }
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    button{
+                       border: none;
+                       padding: 5px;
+                       color: white;
+                       cursor: pointer;
+                       &:first-child{
+                        background-color: blue;
+                       }
+                       &:last-child{
+                        background-color: red;
+                       }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+}
